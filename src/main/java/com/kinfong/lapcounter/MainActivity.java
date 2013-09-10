@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 
         mButton.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                mButton.setText(String.valueOf(Moment.mTotalNumberOfTimeStamps + " total laps"));
+                mButton.setText("Lap: " + String.valueOf(Moment.mTotalNumberOfTimeStamps + 1));
                 Moment m = new Moment();
                 mLayout.addView(createNewTextView(m));
             }
